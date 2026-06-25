@@ -1,0 +1,66 @@
+---
+title: Bern Movement Lab Report
+subtitle: Give me a subtitle
+author:
+  - name: Patric Eichelberger
+    orcid: 0000-0003-2223-6113
+    email: patric.eichelberger@bfh.ch
+    # attributes:
+    #   corresponding: true
+    affiliations:
+      - id: bfh
+        name: Bern University of Applied Sciences
+        department: School of Health Professions
+        group: Physiotherapy Research, Bern Movement Lab
+        address: Murtenstrasse 10
+        city: Bern
+        country: Switzerland
+        postal-code: 3008
+date: last-modified
+# date-format: "[Last Updated on] MMMM, YYYY"
+date-format: "DD.MM.YYYY"
+
+abstract: |
+  Ipsum nostra facilisis sapien nullam. Facilisi himenaeos pharetra ultricies scelerisque non fusce quisque aliquam netus tellus. Dictum tellus et sociis quisque ornare ad a natoque magna blandit. Tortor duis aptent cursus lacus inceptos tristique magnis dictumst. Taciti varius nascetur aliquet hac ornare vitae ultricies. Rhoncus primis purus morbi aliquet quam cubilia nullam malesuada ridiculus.
+keywords: [template, demo]
+# thanks: Thanks to BML contributors
+
+## Bibliography meta-information ##
+reference-section-title: Bibliography  # adjust name of reference section
+bibliography: bibliography.bib
+# You an also use a local CSL file
+csl: https://www.zotero.org/styles/ieee
+    
+## Formats ##
+format:
+  # bml-report-pdf: default
+  bml-report-pdf:
+    # Set alternative fonts here
+    mainfont: Unit Rounded Pro
+    mainfontoptions:
+      - UprightFont = *-Light
+---
+
+# Introduction
+
+*TODO* Create an example file that demonstrates the formatting and features of your format.
+
+Jump height according to Moir et al. [@Moir2008]
+
+# More Information
+
+You can learn more about controlling the appearance of PDF output here: <https://quarto.org/docs/output-formats/pdf-basics.html>
+
+# References
+
+::: {#refs}
+:::
+
+\setcounter{section}{0}
+\renewcommand{\thesection}{\Alph{section}}
+
+# Anhang {.appendix}
+
+## First appendix {#sec-app-first}
+
+

@@ -1,0 +1,36 @@
+\pagestyle{headings} % show default headers
+
+% Title Page
+$if(title)$
+\title{$title$$if(thanks)$\thanks{$thanks$}$endif$}
+$endif$
+$if(title)$
+\subtitle{$subtitle$}
+$endif$
+
+\titlehead{\centering \includegraphics[height= 4cm]{BFH_Logo_A_en_100_4CU} \hspace{0.5cm} \includegraphics[height= 3cm]{Logo-Bern-Movement-Lab}}
+% \author{PD Dr. Heiner Baur, Head aR\&D Physiotherapy\\\href{mailto:heiner.baur@bfh.ch}{heiner.baur@bfh.ch}\\Dr. Patric Eichelberger, Head Bern Movement Lab\\\href{mailto:patric.eichelberger@bfh.ch}{patric.eichelberger@bfh.ch}\vspace{1cm}\\Bern University of Applied Sciences\\School of Health Professions\\aR\&D Physiotherapy\\Bern Movement Lab}
+\author{
+$for(by-author)$
+{\bfseries \normalsize $it.name.literal$$if(it.orcid)$~\orcidlink{$it.orcid$}$endif$}%
+$if(it.attributes.corresponding)$\thanks{Corresponding author.}$endif$ \\%
+$for(it.affiliations)$ \small $it.name$, $it.department$ \\$endfor$%
+{\footnotesize \url{$it.email$}} \\\vspace{10pt}
+$endfor$
+}
+
+\author{
+$for(by-author)$
+\small $it.name.literal$\\
+\small \url{$it.email$} \\
+$for(it.affiliations)$
+\small $it.name$ \\
+\small $it.department$ \\
+\small $it.group$ \\
+\small $it.address$ \\
+\small $it.postal-code$ $it.city$ \\
+\small $it.country$ $endfor$%
+$endfor$
+}
+
+\date{$date$}

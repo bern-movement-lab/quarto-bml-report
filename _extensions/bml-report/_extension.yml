@@ -1,0 +1,30 @@
+title: Bml-report
+author: Patric Eichelberger
+version: 0.0.1
+quarto-required: ">=1.5.0"
+contributes:
+  formats:
+    common:
+      knitr:
+        opts_chunk:
+          echo: false
+          message: false
+          warning: false
+    pdf:
+      documentclass: scrartcl
+      toc: false
+      papersize: a4
+      geometry:
+        - top=30mm
+        - bottom=30mm
+        - left=25mm
+        - right=25mm
+      colorlinks: true
+      link-citations: true
+      number-sections: false
+      include-in-header: header.tex
+      template-partials:
+        - "partials/title.tex"
+      format-resources:
+        - img/BFH_Logo_A_en_100_4CU.eps
+        - img/Logo-Bern-Movement-Lab.eps

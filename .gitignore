@@ -1,0 +1,10 @@
+# Constructed files
+*.html
+*.pdf
+*.log
+
+# Copied from template resources
+/*.eps
+
+# macOS
+.DS_Store
